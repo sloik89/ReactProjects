@@ -6,7 +6,7 @@ const client = createClient({
     environment:'master',
     accessToken:'A1CNEFI6dlkiloVnFIt2Ra0A5wGuzE3Po7t8B77z92U'
 })
-type Projects =  {
+export type Projects =  {
     title: string;
     description: string;
     id: string;
@@ -19,13 +19,13 @@ const useFetchProjects = () =>{
     const getData = async()=>{
         try{
             const res = await client.getEntries({content_type:'tours'})
-            console.log(res)
+          
             const projects = res.items.map(item=>{
                 const {url,desc}= item.fields
                 const title = item.fields.title as string
                 const description:string = desc?.content[0]?.content[0]?.value
                 const id = item.sys.id
-                console.log(url)
+                
                 const img:string = url?.fields?.file.url
                 return {title,description,id,img}
             })
