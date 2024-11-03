@@ -21,6 +21,11 @@ const Tours = () => {
     setTours(projects)
   }
   const handleShowDesc = (id:string) => {
+    if(id === showDesc) {
+      console.log('jestem')
+      setShowDesc(null)
+      return
+    }
     console.log(showDesc)
     setShowDesc(id)
   }
@@ -42,8 +47,8 @@ const Tours = () => {
             <div key={tour.id} className='relative flex flex-col items-center'>
               <h2 className='capitalize font-bold text-xl text-center mb-2'>{tour.title}</h2>
               <img className='h-[200px] w-[350px] object-cover' src={tour.img} alt="" />
-              <p className='max-w-[300px] mx-auto text-md font-medium mt-2'>{ showDesc === tour.id ? tour.description : tour.description.slice(0,100)}
-                <button onClick={()=>handleShowDesc(tour.id)}>...</button>
+              <p className='max-w-[300px] mx-auto text-md font-medium mt-2 relative'>{ showDesc === tour.id ? tour.description : tour.description.slice(0,100)}
+                <button className='text-indigo-800 text-3xl absolute bottom-0 right-5 ' onClick={()=>handleShowDesc(tour.id)}>...</button>
               </p>
 
               <p className=' text-white flex items-center justify-center  font-bold absolute top-8 right-0 w-20 h-8 rounded-lg bg-teal-400'>{((Math.random() * 200) + 100).toFixed(1)} $</p>
