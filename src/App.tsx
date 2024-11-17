@@ -19,6 +19,14 @@ const router = createBrowserRouter([
       {
         path:'reviews',
         element:<Reviews/>
+      },
+      {
+        path:'birthBuddy',
+        element:<BirthdayBuddy/>
+      },
+      {
+        path:'tours',
+        element:<Tours/>
       }
     ]
   }

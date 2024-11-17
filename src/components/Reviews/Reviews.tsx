@@ -27,7 +27,7 @@ const Reviews = () => {
     }
   return (
     <div>
-        <article className='flex flex-col items-center relative'>
+        <article className='flex flex-col items-center relative '>
             <div className='relative  w-[200px] image-container'>
                 <img className='rounded-full  h-[200px] w-[200px] ' src={image} alt={name} />
                 <div className='text-violet-700 bg-pink-400 flex items-center justify-center absolute top-0 right-4  rounded-full w-10 h-10 '><FaQuoteRight/></div>
@@ -41,7 +41,7 @@ const Reviews = () => {
             <button onClick={()=>handleClick('next')} className='absolute text-2xl bottom-[50%] text-violet-600  hover:scale-110  right-[-100px]'><FaChevronRight/></button>
             <button onClick={()=>handleClick('random')} className='bg-purple-600 text-white p-2 rounded-xl capitalize mt-4'>Random user</button>
         </article>
-        <Link to = '/'>go back</Link>
+        
     </div>
   )
 }
