@@ -19,10 +19,10 @@ const Landing = () => {
             <div className='grid md:grid-cols-3 gap-6 mt-8   '>
                 {projects.map((item)=>{
                     return (
-                        <Link to={item.link} className='bg-slate-400  transition ease-out hover:scale-105 border-2 border-purple-500 rounded-lg'>
+                        <Link to={item.link} className=' transition ease-out hover:scale-105 border-2 border-purple-500 rounded-lg'>
                             <div className=' border-teal-600 rounded-lg '>
-                                <img className='w-full object-cover block rounded-lg' src={item.image} alt="" />
-                                <h3 className='text-center text-2xl p-2'>{item.title}</h3>
+                                <img className='w-full h-[200px] object-cover block rounded-lg' src={item.image} alt="" />
+                                <h3 className='text-center text-2xl p-2 bg-pink-100'>{item.title}</h3>
                             </div>
                         </Link>
                     )
