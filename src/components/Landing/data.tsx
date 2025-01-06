@@ -1,5 +1,6 @@
 import imgAcordian from '../../assets/Acordian.png'
 import imgBirthBuddyy from '../../assets/birthBuddy.png'
+import imgMenu from '../../assets/menu.jpg'
 import imgReviews from '../../assets/reeviews.png'
 import imgTours from '../../assets/Tours.jpg'
 export const projects = [
@@ -23,6 +24,12 @@ export const projects = [
         image:imgAcordian,
         link:'acordian'
     },
+    {
+        title:'Menu',
+        image:imgMenu,
+        link:'menu'
+    },
+    
     
 
 ]
