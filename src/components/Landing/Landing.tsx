@@ -16,19 +16,19 @@ const Landing = () => {
         </header>
         <div className='pt-[10rem]  '>
             <h2 className='text-5xl tracking-widest text-center'>Course Projects</h2>
-            <div className='grid grid-cols-3 gap-6 mt-8   '>
+            <div className='grid md:grid-cols-3 gap-6 mt-8   '>
                 {projects.map((item)=>{
                     return (
-                        <Link to={item.link} className='bg-slate-200 transition ease-out hover:scale-105'>
-                            <div className='bg-slate-200 border border-teal-600 rounded-lg'>
-                                <img className='w-full h-[250px]  object-cover block rounded-lg' src={item.image} alt="" />
+                        <Link to={item.link} className='bg-slate-400  transition ease-out hover:scale-105 border-2 border-purple-500 rounded-lg'>
+                            <div className=' border-teal-600 rounded-lg '>
+                                <img className='w-full object-cover block rounded-lg' src={item.image} alt="" />
                                 <h3 className='text-center text-2xl p-2'>{item.title}</h3>
                             </div>
                         </Link>
                     )
                 })}
             </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa distinctio sapiente unde. Facilis officia, quasi veritatis nemo obcaecati suscipit deserunt quae ad unde similique, modi tempora aut ipsum. Placeat, soluta!gggggggggggggggggggggggggggggggggggggg</p>
+                
         </div>
        
         

@@ -4,9 +4,9 @@ import Acordian from './components/Acordian/Acordian.tsx'
 import BirthdayBuddy from './components/BirthdayBuddy/BirthdayBuddy.tsx'
 import Landing from './components/Landing/Landing.tsx'
 import MainPage from './components/MainPage/MainPage.tsx'
+import Menu from './components/Menu/Menu.tsx'
 import Reviews from './components/Reviews/Reviews.tsx'
 import Tours from './components/Tours/Tours.tsx'
-
 const router = createBrowserRouter([
   {
     path:'/',
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
       {
         path:'acordian',
         element:<Acordian/>
+      },
+      {
+        path:'menu',
+        element:<Menu/>
       }
     ]
   }
