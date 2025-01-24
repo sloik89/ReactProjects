@@ -6,6 +6,7 @@ import Landing from './components/Landing/Landing.tsx'
 import MainPage from './components/MainPage/MainPage.tsx'
 import Menu from './components/Menu/Menu.tsx'
 import Reviews from './components/Reviews/Reviews.tsx'
+import Slider from './components/Slider/Slider.tsx'
 import Tabs from './components/Tabs/Tabs.tsx'
 import Tours from './components/Tours/Tours.tsx'
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path:'tabs',
         element:<Tabs/>
+      },
+      {
+        path:'slider',
+        element:<Slider/>
       }
     ]
   }
