@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaChevronCircleLeft, FaChevronCircleRight, FaQuoteRight } from 'react-icons/fa'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import { longList, shortList } from './data'
-const nextSlide = 'translate-x-[100%]'
+
 const Slider = () => {
     const [list,seList] = useState(longList)
     const [currentPerson,setCurrentPerson] = useState(0)
@@ -23,6 +23,17 @@ const Slider = () => {
         console.log(info)
 
     }
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentPerson((prevState) => {
+                let newState = prevState >= longList.length - 1 ? 0 : prevState + 1
+                return newState
+            })
+        },2000)
+            return () => {
+                clearInterval(interval)
+            }
+    },[currentPerson])
   return (
     <section className='relative'>
         <div className='mx-auto w-[80vw] max-w-[800px] relative h-[450px] overflow-hidden'>

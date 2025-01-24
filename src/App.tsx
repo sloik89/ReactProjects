@@ -5,6 +5,7 @@ import BirthdayBuddy from './components/BirthdayBuddy/BirthdayBuddy.tsx'
 import Landing from './components/Landing/Landing.tsx'
 import MainPage from './components/MainPage/MainPage.tsx'
 import Menu from './components/Menu/Menu.tsx'
+import ReactSlick from './components/ReactSlickSlider/ReactSlick.tsx'
 import Reviews from './components/Reviews/Reviews.tsx'
 import Slider from './components/Slider/Slider.tsx'
 import Tabs from './components/Tabs/Tabs.tsx'
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path:'slider',
         element:<Slider/>
+      },
+      {
+        path:'slickSlider',
+        element:<ReactSlick/>
       }
     ]
   }

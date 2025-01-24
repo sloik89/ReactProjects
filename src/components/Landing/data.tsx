@@ -2,6 +2,7 @@ import imgAcordian from '../../assets/Acordian.png'
 import imgBirthBuddyy from '../../assets/birthBuddy.png'
 import imgMenu from '../../assets/menu.jpg'
 import imgReviews from '../../assets/reeviews.png'
+import imgSlider from '../../assets/slider.jpg'
 import imgTabs from '../../assets/tabs.png'
 import imgTours from '../../assets/Tours.jpg'
 export const projects = [
@@ -36,6 +37,15 @@ export const projects = [
         link:'tabs'
     },
     
-    
+    {
+        title:'Slider',
+        image:imgSlider,
+        link:'slider'
+    },
+    {
+        title:'ReactSlick',
+        image:imgSlider,
+        link:'slickSlider'
+    }
 
 ]
