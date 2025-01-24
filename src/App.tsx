@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Acordian from './components/Acordian/Acordian.tsx'
 import BirthdayBuddy from './components/BirthdayBuddy/BirthdayBuddy.tsx'
 import Landing from './components/Landing/Landing.tsx'
+import LoremGenerator from './components/LoremGenerator/LoremGenerator.tsx'
 import MainPage from './components/MainPage/MainPage.tsx'
 import Menu from './components/Menu/Menu.tsx'
 import ReactSlick from './components/ReactSlickSlider/ReactSlick.tsx'
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path:'slickSlider',
         element:<ReactSlick/>
+      },
+      {
+        path:'generator',
+        element:<LoremGenerator/>
       }
     ]
   }
