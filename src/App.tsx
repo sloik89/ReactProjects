@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Acordian from './components/Acordian/Acordian.tsx'
 import BirthdayBuddy from './components/BirthdayBuddy/BirthdayBuddy.tsx'
 import ColorGenerator from './components/ColorGenerator/ColorGenerator.tsx'
+import GrocceryBud from './components/GrocceryBud/GrocceryBud.tsx'
 import Landing from './components/Landing/Landing.tsx'
 import LoremGenerator from './components/LoremGenerator/LoremGenerator.tsx'
 import MainPage from './components/MainPage/MainPage.tsx'
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path:'colorgenerator',
         element:<ColorGenerator/>
+      },
+      {
+        path:'groccerybud',
+        element:<GrocceryBud/>
       }
     ]
   }

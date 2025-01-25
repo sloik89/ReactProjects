@@ -1,5 +1,7 @@
 import imgAcordian from '../../assets/Acordian.png'
+import imgBgGenerator from '../../assets/bg-generator.png'
 import imgBirthBuddyy from '../../assets/birthBuddy.png'
+import imgGrocery from '../../assets/groccerybud.jpg'
 import imgLorem from '../../assets/lorem.jpg'
 import imgMenu from '../../assets/menu.jpg'
 import imgReviews from '../../assets/reeviews.png'
@@ -52,6 +54,16 @@ export const projects = [
         title:'Lorem generator',
         image:imgLorem,
         link:'generator'
+    },
+    {
+        title:'Bg generator',
+        image:imgBgGenerator,
+        link:'colorgenerator'
+    },
+    {
+        title:'Grocery Bud',
+        image:imgGrocery,
+        link:'groccerybud'
     }
 
 ]

@@ -15,7 +15,7 @@ const FormColor = ({addColor}:FormProps) => {
         <form className='mb-6' onSubmit={handleSubmit} >
             <input type="color" placeholder='#f15025' onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setColor(e.target.value)} value={color} />
             <input type="text" placeholder='#f15025' onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setColor(e.target.value)} value={color} />
-            <button className='bg-violet-600 p-1 tracking-wide rounded-lg capitalize text-white text-xl ml-2' >submit</button>
+            <button className='bg-violet-600 p-1 tracking-wide rounded-lg capitalize text-white text-xl ml-2 hover:bg-violet-500' >submit</button>
         </form>
     </div>
   )
