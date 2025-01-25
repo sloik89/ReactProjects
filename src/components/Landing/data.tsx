@@ -4,6 +4,7 @@ import imgBirthBuddyy from '../../assets/birthBuddy.png'
 import imgGrocery from '../../assets/groccerybud.jpg'
 import imgLorem from '../../assets/lorem.jpg'
 import imgMenu from '../../assets/menu.jpg'
+import imgNavvar from '../../assets/navbar.jpg'
 import imgReviews from '../../assets/reeviews.png'
 import imgSlider from '../../assets/slider.jpg'
 import imgTabs from '../../assets/tabs.png'
@@ -64,6 +65,11 @@ export const projects = [
         title:'Grocery Bud',
         image:imgGrocery,
         link:'groccerybud'
+    },
+    {
+        title:'navbar',
+        image:imgNavvar,
+        link:'navbar'
     }
 
 ]

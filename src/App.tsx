@@ -8,6 +8,7 @@ import Landing from './components/Landing/Landing.tsx'
 import LoremGenerator from './components/LoremGenerator/LoremGenerator.tsx'
 import MainPage from './components/MainPage/MainPage.tsx'
 import Menu from './components/Menu/Menu.tsx'
+import Navbar from './components/Navbar/Navbar.tsx'
 import ReactSlick from './components/ReactSlickSlider/ReactSlick.tsx'
 import Reviews from './components/Reviews/Reviews.tsx'
 import Slider from './components/Slider/Slider.tsx'
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path:'groccerybud',
         element:<GrocceryBud/>
+      },
+      {
+        path:'navbar',
+        element:<Navbar/>
       }
     ]
   }
