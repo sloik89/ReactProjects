@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import { Fa500Px, FaAccusoft, FaAdversal, FaAvianex, FaBitcoin, FaBtc, FaCodiepie, FaDocker, FaGithubSquare } from 'react-icons/fa';
-const sublinks = [
+export const sublinks = [
     {
         pageId:nanoid(),
         page:'products',

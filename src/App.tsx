@@ -13,6 +13,7 @@ import ReactSlick from './components/ReactSlickSlider/ReactSlick.tsx'
 import Reviews from './components/Reviews/Reviews.tsx'
 import Main from './components/Sidebar/Main.tsx'
 import Slider from './components/Slider/Slider.tsx'
+import StrapiProvider from './components/Strapi/StrapiProvider.tsx'
 import Tabs from './components/Tabs/Tabs.tsx'
 import Tours from './components/Tours/Tours.tsx'
 const router = createBrowserRouter([
@@ -75,7 +76,12 @@ const router = createBrowserRouter([
       {
         path:'sidebar',
         element:<Main/>
-      }
+      },
+      {
+        path:'strapi',
+        element:<StrapiProvider/>
+      },
+
     ]
   }
 ]
