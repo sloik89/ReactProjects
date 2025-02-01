@@ -6,7 +6,9 @@ import imgLorem from '../../assets/lorem.jpg'
 import imgMenu from '../../assets/menu.jpg'
 import imgNavvar from '../../assets/navbar.jpg'
 import imgReviews from '../../assets/reeviews.png'
+import imgSidebarModal from '../../assets/sidebar-modal.jpg'
 import imgSlider from '../../assets/slider.jpg'
+import imgStrapi from '../../assets/strapi.jpg'
 import imgTabs from '../../assets/tabs.png'
 import imgTours from '../../assets/Tours.jpg'
 export const projects = [
@@ -70,6 +72,17 @@ export const projects = [
         title:'navbar',
         image:imgNavvar,
         link:'navbar'
+    },
+    {
+        title:'strapi',
+        image:imgStrapi,
+        link:'strapi'
+    },
+    {
+        title:'Sidebar/Modal',
+        image:imgSidebarModal,
+        link:'sidebar'
     }
+
 
 ]

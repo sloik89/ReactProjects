@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Acordian from './components/Acordian/Acordian.tsx'
 import BirthdayBuddy from './components/BirthdayBuddy/BirthdayBuddy.tsx'
+import Cart from './components/Cart/App.tsx'
 import ColorGenerator from './components/ColorGenerator/ColorGenerator.tsx'
 import GrocceryBud from './components/GrocceryBud/GrocceryBud.tsx'
 import Landing from './components/Landing/Landing.tsx'
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
         path:'strapi',
         element:<StrapiProvider/>
       },
+      {
+        path:'cart',
+        element:<Cart/>
+      }
 
     ]
   }
