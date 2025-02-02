@@ -4,7 +4,7 @@ import { ContextProps, useGlobalContext } from './context'
 import cartItems from './data'
 
 const CartContainer = () => {
-    const {cart,clearCart,removeItem} = useGlobalContext() as ContextProps
+    const {cart,clearCart,removeItem,totalCost} = useGlobalContext() as ContextProps
     
     const cartArray = Array.from(cart.entries())
     const testMap = new Map<string | number,string>([['20','sss'],[51,'xxxx'],[2222,'sssss']])
@@ -32,10 +32,10 @@ const CartContainer = () => {
             })}
         </div>
         <footer className='mt-6 pb-10'>
-            <hr/>
-            <div>
-                <h5>
-                    total <span>10$</span>
+            <hr className='border-2 border-pink-300'/>
+            <div className='flex flex-col gap-4 items-center mt-5'>
+                <h5 className='capitalize font-bold text-2xl'>
+                    total:<span className='text-3xl tracking-wider pl-3'>{`${totalCost.toFixed(2)}$`}</span>
                 </h5>
                 <button onClick={clearCart} className='capitalize text-white tracking-widest bg-purple-500 rounded-md px-2 py-1'>
                     clear cart

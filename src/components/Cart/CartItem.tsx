@@ -23,7 +23,7 @@ const CartItem = ({img,title,price,id,amount}:CartItem) => {
                 <FaChevronUp/> 
             </button>
             <span className='text-black'>{amount}</span>
-            <button className='text-2xl text-blue-500'>
+            <button className='text-2xl text-blue-500' onClick={()=>decrease(id)}>
             <FaChevronDown/>
             </button>
         </div>

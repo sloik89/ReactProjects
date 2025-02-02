@@ -36,7 +36,18 @@ type ActionType = {
         return {...state,cart:tempCart}
     }
     if(action.type === 'DECREASE'){
-        
+        console.log(action.type)
+        const tempCart = new Map(state.cart)
+        const tempId = action.payload as string
+        const newItem = tempCart.get(tempId) as CartType
+        console.log(newItem)
+        if(newItem.amount === 1){
+            tempCart.delete(tempId)
+            return {...state,cart:tempCart}
+        }
+        newItem.amount = newItem.amount - 1
+        tempCart.set(tempId,newItem)
+        return {...state,cart:tempCart}
     }
     return state
 }

@@ -1,7 +1,7 @@
 import React, { createContext, ReactNode, useContext, useReducer, useState } from 'react';
 import cartItems from './data';
 import { CartType, reducer, StateType } from './reducer';
-
+import { getTotals } from './utilis';
 const CartContext = createContext<ContextProps | undefined>(undefined)
 export type ContextProps = {
     clearCart:()=>void;
@@ -9,7 +9,9 @@ export type ContextProps = {
     decrease:(id:string)=>void;
     increase:(id:string)=>void;
     loading:boolean;
-    cart:Map<string,CartType>
+    cart:Map<string,CartType>;
+    totalAmount:number;
+    totalCost:number;
     
 }
 const initialState :StateType= {
@@ -19,7 +21,8 @@ const initialState :StateType= {
 // ------
 export const CartProvider = ({children}:{children: React.ReactNode}) => {
     const [state,dispatch] = useReducer(reducer,initialState)
-    console.log()
+    const {totalCost,totalAmount} = getTotals(state.cart)
+    console.log(totalCost)
     const clearCart = () =>{
         dispatch({type:'CLEAR_CART'})
     }
@@ -33,7 +36,7 @@ export const CartProvider = ({children}:{children: React.ReactNode}) => {
         dispatch({type:'DECREASE',payload:id})
     }
     return (
-        <CartContext.Provider value={{...state,clearCart,removeItem,increase,decrease}}>
+        <CartContext.Provider value={{...state,clearCart,removeItem,increase,decrease,totalAmount,totalCost}}>
             {children}
         </CartContext.Provider>
     )
